@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int size, i, sum = 0;
+
+    printf("Enter size: ");
+    scanf("%d", &size);
+
+    int arr[size];
+
+    printf("Enter elements: ");
+    for(i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+        sum += arr[i];
+    }
+
+    printf("Sum of elements = %d\n", sum);
+
+    return 0;
+}
